@@ -26,7 +26,7 @@ A modified BiSeNet [1] model (backbone: ResNet18) with
 * A single fold model with TTA (horizontal flip)
 * Threshold of ship probability: 0.5
 * Remove small (< 30 pixels) ship masks
-* Average of inference time on 769x769 resolution
+* Average inference time (769x769, on a single 1080TI)
     - Without TTA: 30 FPS
     - With TTA: 18 FPS
 
@@ -57,6 +57,7 @@ A modified BiSeNet [1] model (backbone: ResNet18) with
 * torchvision 0.2.0
 * numpy
 * opencv
+* scikit-image
 * tqdm
 * pandas
 
